@@ -34,7 +34,7 @@ function App() {
   function send() {
     setstatus(true);
     axios
-      .post("http://localhost:5000/sendemail", {
+      .post("https://bulkmail-uwbz.onrender.com/sendemail", {
         msg: msg,
         emailList: emailList,
       })
